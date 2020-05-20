@@ -1,0 +1,50 @@
+//
+//  main.cpp
+//  Simple Currency Converter
+//
+//  Created by Solee Cheon on 5/20/20.
+//  Copyright © 2020 Solee Cheon. All rights reserved.
+//
+//  Converter that asks user for 3 foreign currency inputs: pesos, reais, soles and converts them into a total USD sum
+
+#include <iostream>
+
+int main() {
+  
+  //algorithm to convert Pesos, Reais, and Soles into TOTAL USD
+
+  //1. have user enter the amt (3 variables required)
+    //will need 3 std::cout and 3 std::cin
+
+double pesos, reais, soles;
+
+std::cout << "Enter number of Colombian Pesos:\n";
+std::cin >> pesos;
+
+std::cout << "Enter number of Brazilian Reais:\n";
+std::cin >> reais;
+
+std::cout << "Enter number of Peruvian Soles:\n";
+std::cin >> soles;
+
+  //2. Math to Convert the foreign money - another 3 variables for each conversion. and 1 more for total
+    //pesos = 1 pesos = 0.043 dollars
+    //reais= 1 reais = 0.18 dollars
+    //soles = 1 soles = 0.29 dollars
+double p_conv, reais_conv, soles_conv, total;
+
+p_conv = pesos * 0.043;
+
+reais_conv = reais * 0.18;
+
+soles_conv = soles * 0.29;
+
+total = p_conv + reais_conv + soles_conv;
+
+
+  //3.Display the conversion
+  
+std::cout << "Total US Dollars: $" << total << "\n";
+
+  
+}
