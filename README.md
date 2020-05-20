@@ -1,1 +1,1 @@
-# sopsol.github.io
+Simple C++ projects
